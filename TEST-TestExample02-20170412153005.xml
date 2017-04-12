@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<testsuite errors="0" failures="0" name="TestExample02-20170412153005" tests="5" time="148.621">
+	<testcase classname="TestExample02" name="test_aCreateChannel" time="2.173"/>
+	<testcase classname="TestExample02" name="test_bJoinChannel" time="16.538"/>
+	<testcase classname="TestExample02" name="test_cInstall" time="0.573"/>
+	<testcase classname="TestExample02" name="test_dInstantiate" time="14.567"/>
+	<testcase classname="TestExample02" name="test_eInvokeQuery" time="114.771"/>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

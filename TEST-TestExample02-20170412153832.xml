@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<testsuite errors="0" failures="1" name="TestExample02-20170412153832" tests="5" time="184.661">
+	<testcase classname="TestExample02" name="test_aCreateChannel" time="2.173"/>
+	<testcase classname="TestExample02" name="test_bJoinChannel" time="16.520"/>
+	<testcase classname="TestExample02" name="test_cInstall" time="0.447"/>
+	<testcase classname="TestExample02" name="test_dInstantiate" time="14.786"/>
+	<testcase classname="TestExample02" name="test_eInvokeQuery" time="150.735">
+		<failure message="1 != 0" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "./scripts/script.py", line 32, in test_eInvokeQuery
+    self.runIt("invokeQuery")
+  File "./scripts/script.py", line 17, in runIt
+    self.assertEqual(p.returncode, 0)
+AssertionError: 1 != 0
+]]>		</failure>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

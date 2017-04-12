@@ -1,0 +1,343 @@
+<?xml version="1.0" ?>
+<testsuite errors="0" failures="0" name="TestExample02-20170412151739" tests="5" time="151.532">
+	<testcase classname="TestExample02" name="test_aCreateChannel" time="2.170"/>
+	<testcase classname="TestExample02" name="test_bJoinChannel" time="16.452"/>
+	<testcase classname="TestExample02" name="test_cInstall" time="0.559"/>
+	<testcase classname="TestExample02" name="test_dInstantiate" time="14.852"/>
+	<testcase classname="TestExample02" name="test_eInvokeQuery" time="117.500"/>
+	<system-out>
+<![CDATA[-----------------------------------------
+Orderer IP 172.20.0.5
+PEER0 IP 172.20.0.6
+PEER1 IP 172.20.0.7
+PEER2 IP 172.20.0.8
+PEER3 IP 172.20.0.9
+Channel name prefix: myc
+Total channels: 1
+Total Chaincodes: 1
+Total Endorsers: 4
+-----------------------------------------
+[36m2017-04-12 15:17:39.198 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2017-04-12 15:17:39.198 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+[36m2017-04-12 15:17:41.220 UTC [msp] GetLocalMSP -> DEBU 003[0m Returning existing local MSP
+[36m2017-04-12 15:17:41.220 UTC [msp] GetDefaultSigningIdentity -> DEBU 004[0m Obtaining default signing identity
+[36m2017-04-12 15:17:41.220 UTC [msp] GetLocalMSP -> DEBU 005[0m Returning existing local MSP
+[36m2017-04-12 15:17:41.220 UTC [msp] GetDefaultSigningIdentity -> DEBU 006[0m Obtaining default signing identity
+[36m2017-04-12 15:17:41.220 UTC [msp] Sign -> DEBU 007[0m Sign: plaintext: 0AD1040A1008021A0608958AB9C70522...00120D1A0B08FFFFFFFFFFFFFFFFFF01 
+[36m2017-04-12 15:17:41.220 UTC [msp] Sign -> DEBU 008[0m Sign: digest: 844F679F2DF3B18F4D892759D19071DFB8325714A1FB50B32174CA5B4A1D843A 
+Received block:  header:<6:39 0:"\x00" } 0:4 4:13 1159:/* unknown wire type 6 */ 14 { 0:/* unknown wire type 7 */ 12:447663427 9:2098789091390944465 4:3626447615628805849 1:/* unknown wire type 7 */ 10:/* unexpected EOF */ 11:/* unexpected EOF */ /* unexpected EOF */ >data:<1:"\n\xd1\x04\n\x10\b\x01\x1a\x06\b\x93\x8a\xb9\xc7\x05\"\x04myc0\x12\xbc\x04\n\x9f\x04\n\nOrdererMSP\x12\x90\x04-----BEGIN -----\nMIIBajCCAQ+gAwIBAwICA+gwCgYIKoZIzj0EAwIwFjEUMBIGA1UEAwwLb3JkZXJl\nck9yZzAwHhcNMTcwMjIwMTkwNjEwWhcNMTgwMjIwMTkwNjEwWjATMREwDwYDVQQD\nDAhvcmRlcmVyMDBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABH1h6WeFWnBDgPN5\nbiXbyzqShGrAZ9ztOu4j03xcrqUIenBQASJ/rmAErmq4kilNyRVnwdZwDcGTrAwP\nQfAXkVCjUDBOMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFK01/Qm7YoTpXLXjq18D\n+X2pExanMB8GA1UdIwQYMBaAFCVakuvqxEcK8pYMf/Hw8hsexRMTMAoGCCqGSM49\nBAMCA0kAMEYCIQDXdRYqrZdTAM6F2JBl/eN3nIHoBa7N3gIQDqdUAris8wIhAP6i\nf0CgyBN4nWmw2mT+XtxaB0xxWrhYj/j4agiuQzrd\n-----END -----\n\x12\x18\x0fi\xd1\r\x80Ud\"o-\f\xb67s\xe9\xa8n\"i\xb4J\xb0\x1f\xcf\x12\x9f\x92\x01\n\xacH\x12\xa9H\x12\x95\r\n\aOrderer\x12\x89\r\x12\xbe\n\n\nOrdererOrg\x12\xaf\n\x1a\x8c\t\n\x03MSP\x12\x84\t\x12\xf9\b\x12\xf6\b\n\nOrdererMSP\x12\xb2\x04-----BEGIN CERTIFICATE-----\nMIIBcjCCARigAwIBAwICA+gwCgYIKoZIzj0EAwIwFjEUMBIGA1UEAwwLb3JkZXJl\nck9yZzAwHhcNMTcwMjIwMTkwNjEwWhcNMTgwMjIwMTkwNjEwWjAWMRQwEgYDVQQD\nDAtvcmRlcmVyT3JnMDBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABK8Sv0EA9h06\nfmBkUCO+D/b/2INZ2huy+W/HCxSF22c7WGoJbRzQcWtQmW1KqZowUk86RcxVfFqv\njEMFVXzV38SjVjBUMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFCVakuvq\nxEcK8pYMf/Hw8hsexRMTMB8GA1UdIwQYMBaAFCVakuvqxEcK8pYMf/Hw8hsexRMT\nMAoGCCqGSM49BAMCA0gAMEUCIQCmXgDSRTyxpSk+PXg0FNlYZ4ijTVwKgLkYVhod\nzZPfngIgO4y0p3Fs/gNsJYrroKaaVDe955KrPp/O55jYDKAD/oY=\n-----END CERTIFICATE-----\n\"\xb2\x04-----BEGIN CERTIFICATE-----\nMIIBcjCCARigAwIBAwICA+gwCgYIKoZIzj0EAwIwFjEUMBIGA1UEAwwLb3JkZXJl\nck9yZzAwHhcNMTcwMjIwMTkwNjEwWhcNMTgwMjIwMTkwNjEwWjAWMRQwEgYDVQQD\nDAtvcmRlcmVyT3JnMDBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABK8Sv0EA9h06\nfmBkUCO+D/b/2INZ2huy+W/HCxSF22c7WGoJbRzQcWtQmW1KqZowUk86RcxVfFqv\njEMFVXzV38SjVjBUMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFCVakuvq\nxEcK8pYMf/Hw8hsexRMTMB8GA1UdIwQYMBaAFCVakuvqxEcK8pYMf/Hw8hsexRMT\nMAoGCCqGSM49BAMCA0gAMEUCIQCmXgDSRTyxpSk+PXg0FNlYZ4ijTVwKgLkYVhod\nzZPfngIgO4y0p3Fs/gNsJYrroKaaVDe955KrPp/O55jYDKAD/oY=\n-----END CERTIFICATE-----\n\x1a\x06Admins\"3\n\aReaders\x12(\x12\x1e\b\x01\x12\x1a\x12\b\x12\x06\b\x01\x12\x02\b\x00\x1a\x0e\x12\f\n\nOrdererMSP\x1a\x06Admins\"3\n\aWriters\x12(\x12\x1e\b\x01\x12\x1a\x12\b\x12\x06\b\x01\x12\x02\b\x00\x1a\x0e\x12\f\n\nOrdererMSP\x1a\x06Admins\"4\n\x06Admins\x12*\x12 \b\x01\x12\x1c\x12\b\x12\x06\b\x01\x12\x02\b\x00\x1a\x10\x12\x0e\n\nOrdererMSP\x10\x01\x1a\x06Admins\x1a%\n\x0eCreationPolicy\x12\x13\x12\x11\n\x0fAcceptAllPolicy\x1a\"\n\tBatchSize\x12\x15\x12\v\b\n\x10\x80\x80\xc01\x18\x80\x80 \x1a\x06Admins\x1a\x1f\n\fBatchTimeout\x12\x0f\x12\x05\n\x0310s\x1a\x06Admins\x1a\x1f\n\x13ChannelRestrictions\x12\b\x1a\x06Admins\x1a!\n\rConsensusType\x12\x10\x12\x06\n\x04solo\x1a\x06Admins\"\"\n\aWriters\x12\x17\x12\r\b\x03\x12\t\n\aWriters\x1a\x06Admins\"\"\n\x06Admins\x12\x18\x12\x0e\b\x03\x12\n\n\x06Admins\x10\x02\x1a\x06Admins\"*\n\x0fBlockValidation\x12\x17\x12\r\b\x03\x12\t\n\aWriters\x1a\x06Admins\"\"\n\aReaders\x12\x17\x12\r\b\x03\x12\t\n\aReaders\x1a\x06Admins\x12\xf68\n\vApplication\x12\xe68\x12\xfa\x1b\n\aOrg1MSP\x12\xee\x1b\x1a%\n\vAnchorPeers\x12\x16\x12\f\n\n\n\x05peer3\x10\x8b7\x1a\x06Admins\x1a\xad\x1a\n\x03MSP\x12\xa5\x1a\x12\x9a\x1a\x12\x97\x1a\n\aOrg1MSP\x12\xaa\x04-----BEGIN CERTIFICATE-----\nMIIBbDCCARKgAwIBAwICA+gwCgYIKoZIzj0EAwIwEzERMA8GA1UEAwwIcGVlck9y\nZzAwHhcNMTcwMjIwMTkwNjEwWhcNMTgwMjIwMTkwNjEwWjATMREwDwYDVQQDDAhw\nZWVyT3JnMDBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABKJfDc/CcaiHRipTG2AB\nK5fA0LO9SOlbtC9bZcjLo/xsL157p+3QB3UVF3gt7nkwgMs/ul3FhSEFTk2EVNlF\n1QCjVjBUMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFFQzuQR1RZP/Qn/B\nNDtGSa8n4eN/MB8GA1UdIwQYMBaAFFQzuQR1RZP/Qn/BNDtGSa8n4eN/MAoGCCqG\nSM49BAMCA0gAMEUCIAuG+/Fy3x9JXAD1/rFsu3ZpCKbXiXZLGF7P6Gma8is5AiEA\npSQpRcdukxe4zvcfRmNBjMbNLWCoWlHSQA2jD678QGE=\n-----END CERTIFICATE-----\n\x12\xaa\x04-----BEGIN CERTIFICATE-----\nMIIBbDCCARKgAwIBAwICA+gwCgYIKoZIzj0EAwIwEzERMA8GA1UEAwwIcGVlck9y\nZzEwHhcNMTcwMjIwMTkwNjEwWhcNMTgwMjIwMTkwNjEwWjATMREwDwYDVQQDDAhw\nZWVyT3JnMTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJ2S+UvyFgFZYL6qcrKo\nzy72Nkc/RQVzg1VfwC3X7QcnHEVBuCzba1nxdDVE8XPnhmKBWLKh0adn6GKUZpyf\nmbKjVjBUMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFAQlMVsXlKGMEWPf\nKMMM6QVASnlPMB8GA1UdIwQYMBaAFAQlMVsXlKGMEWPfKMMM6QVASnlPMAoGCCqG\nSM49BAMCA0gAMEUCIHr4AD6Xx3R6zFCsveIMnWao9Us88/0uGHoT4ELmMhA1AiEA\nyzfXU5qHp3xBJ1BrKOGi71UmQZVwWfO26INhxcfpCAg=\n-----END CERTIFICATE-----\n\x12\xaa\x04-----BEGIN CERTIFICATE-----\nMIIBbDCCARKgAwIBAwICA+gwCgYIKoZIzj0EAwIwEzERMA8GA1UEAwwIcGVlck9y\nZzIwHhcNMTcwMjIwMTkwNjExWhcNMTgwMjIwMTkwNjExWjATMREwDwYDVQQDDAhw\nZWVyT3JnMjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABH3IweQK1AJdcV3FF27a\ngNKhy13Nz2OguzsmUbW85/7pReenAWzs89rEApHXoJqUtNzdZfaLkcq32E1Ilk3N\noN2jVjBUMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFEhOilIyGA53r9Zo\nO5GQP0RSZcQ1MB8GA1UdIwQYMBaAFEhOilIyGA53r9ZoO5GQP0RSZcQ1MAoGCCqG\nSM49BAMCA0gAMEUCIQD+/5z68ewJarixMgYrg/MwyTMwX7ikCaCgU5TN2MU1PQIg\nQe+klrq6COxsmrctClV64Wj4zhGTOhaZG1yN24OXukQ=\n-----END CERTIFICATE-----\n\"\xaa\x04-----BEGIN CERTIFICATE-----\nMIIBbDCCARKgAwIBAwICA+gwCgYIKoZIzj0EAwIwEzERMA8GA1UEAwwIcGVlck9y\nZzAwHhcNMTcwMjIwMTkwNjEwWhcNMTgwMjIwMTkwNjEwWjATMREwDwYDVQQDDAhw\nZWVyT3JnMDBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABKJfDc/CcaiHRipTG2AB\nK5fA0LO9SOlbtC9bZcjLo/xsL157p+3QB3UVF3gt7nkwgMs/ul3FhSEFTk2EVNlF\n1QCjVjBUMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFFQzuQR1RZP/Qn/B\nNDtGSa8n4eN/MB8GA1UdIwQYMBaAFFQzuQR1RZP/Qn/BNDtGSa8n4eN/MAoGCCqG\nSM49BAMCA0gAMEUCIAuG+/Fy3x9JXAD1/rFsu3ZpCKbXiXZLGF7P6Gma8is5AiEA\npSQpRcdukxe4zvcfRmNBjMbNLWCoWlHSQA2jD678QGE=\n-----END CERTIFICATE-----\n\"\xaa\x04-----BEGIN CERTIFICATE-----\nMIIBbDCCARKgAwIBAwICA+gwCgYIKoZIzj0EAwIwEzERMA8GA1UEAwwIcGVlck9y\nZzEwHhcNMTcwMjIwMTkwNjEwWhcNMTgwMjIwMTkwNjEwWjATMREwDwYDVQQDDAhw\nZWVyT3JnMTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJ2S+UvyFgFZYL6qcrKo\nzy72Nkc/RQVzg1VfwC3X7QcnHEVBuCzba1nxdDVE8XPnhmKBWLKh0adn6GKUZpyf\nmbKjVjBUMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFAQlMVsXlKGMEWPf\nKMMM6QVASnlPMB8GA1UdIwQYMBaAFAQlMVsXlKGMEWPfKMMM6QVASnlPMAoGCCqG\nSM49BAMCA0gAMEUCIHr4AD6Xx3R6zFCsveIMnWao9Us88/0uGHoT4ELmMhA1AiEA\nyzfXU5qHp3xBJ1BrKOGi71UmQZVwWfO26INhxcfpCAg=\n-----END CERTIFICATE-----\n\"\xaa\x04-----BEGIN CERTIFICATE-----\nMIIBbDCCARKgAwIBAwICA+gwCgYIKoZIzj0EAwIwEzERMA8GA1UEAwwIcGVlck9y\nZzIwHhcNMTcwMjIwMTkwNjExWhcNMTgwMjIwMTkwNjExWjATMREwDwYDVQQDDAhw\nZWVyT3JnMjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABH3IweQK1AJdcV3FF27a\ngNKhy13Nz2OguzsmUbW85/7pReenAWzs89rEApHXoJqUtNzdZfaLkcq32E1Ilk3N\noN2jVjBUMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFEhOilIyGA53r9Zo\nO5GQP0RSZcQ1MB8GA1UdIwQYMBaAFEhOilIyGA53r9ZoO5GQP0RSZcQ1MAoGCCqG\nSM49BAMCA0gAMEUCIQD+/5z68ewJarixMgYrg/MwyTMwX7ikCaCgU5TN2MU1PQIg\nQe+klrq6COxsmrctClV64Wj4zhGTOhaZG1yN24OXukQ=\n-----END CERTIFICATE-----\n\x1a\x06Admins\"1\n\x06Admins\x12'\x12\x1d\b\x01\x12\x19\x12\b\x12\x06\b\x01\x12\x02\b\x00\x1a\r\x12\v\n\aOrg1MSP\x10\x01\x1a\x06Admins\"0\n\aReaders\x12%\x12\x1b\b\x01\x12\x17\x12\b\x12\x06\b\x01\x12\x02\b\x00\x1a\v\x12\t\n\aOrg1MSP\x1a\x06Admins\"0\n\aWriters\x12%\x12\x1b\b\x01\x12\x17\x12\b\x12\x06\b\x01\x12\x02\b\x00\x1a\v\x12\t\n\aOrg1MSP\x1a\x06Admins\x12\xfa\x1b\n\aOrg0MSP\x12\xee\x1b\x1a%\n\vAnchorPeers\x12\x16\x12\f\n\n\n\x05peer0\x10\x8b7\x1a\x06Admins\x1a\xad\x1a\n\x03MSP\x12\xa5\x1a\x12\x9a\x1a\x12\x97\x1a\n\aOrg0MSP\x12\xaa\x04-----BEGIN CERTIFICATE-----\nMIIBbDCCARKgAwIBAwICA+gwCgYIKoZIzj0EAwIwEzERMA8GA1UEAwwIcGVlck9y\nZzAwHhcNMTcwMjIwMTkwNjEwWhcNMTgwMjIwMTkwNjEwWjATMREwDwYDVQQDDAhw\nZWVyT3JnMDBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABKJfDc/CcaiHRipTG2AB\nK5fA0LO9SOlbtC9bZcjLo/xsL157p+3QB3UVF3gt7nkwgMs/ul3FhSEFTk2EVNlF\n1QCjVjBUMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFFQzuQR1RZP/Qn/B\nNDtGSa8n4eN/MB8GA1UdIwQYMBaAFFQzuQR1RZP/Qn/BNDtGSa8n4eN/MAoGCCqG\nSM49BAMCA0gAMEUCIAuG+/Fy3x9JXAD1/rFsu3ZpCKbXiXZLGF7P6Gma8is5AiEA\npSQpRcdukxe4zvcfRmNBjMbNLWCoWlHSQA2jD678QGE=\n-----END CERTIFICATE-----\n\x12\xaa\x04-----BEGIN CERTIFICATE-----\nMIIBbDCCARKgAwIBAwICA+gwCgYIKoZIzj0EAwIwEzERMA8GA1UEAwwIcGVlck9y\nZzEwHhcNMTcwMjIwMTkwNjEwWhcNMTgwMjIwMTkwNjEwWjATMREwDwYDVQQDDAhw\nZWVyT3JnMTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJ2S+UvyFgFZYL6qcrKo\nzy72Nkc/RQVzg1VfwC3X7QcnHEVBuCzba1nxdDVE8XPnhmKBWLKh0adn6GKUZpyf\nmbKjVjBUMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFAQlMVsXlKGMEWPf\nKMMM6QVASnlPMB8GA1UdIwQYMBaAFAQlMVsXlKGMEWPfKMMM6QVASnlPMAoGCCqG\nSM49BAMCA0gAMEUCIHr4AD6Xx3R6zFCsveIMnWao9Us88/0uGHoT4ELmMhA1AiEA\nyzfXU5qHp3xBJ1BrKOGi71UmQZVwWfO26INhxcfpCAg=\n-----END CERTIFICATE-----\n\x12\xaa\x04-----BEGIN CERTIFICATE-----\nMIIBbDCCARKgAwIBAwICA+gwCgYIKoZIzj0EAwIwEzERMA8GA1UEAwwIcGVlck9y\nZzIwHhcNMTcwMjIwMTkwNjExWhcNMTgwMjIwMTkwNjExWjATMREwDwYDVQQDDAhw\nZWVyT3JnMjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABH3IweQK1AJdcV3FF27a\ngNKhy13Nz2OguzsmUbW85/7pReenAWzs89rEApHXoJqUtNzdZfaLkcq32E1Ilk3N\noN2jVjBUMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFEhOilIyGA53r9Zo\nO5GQP0RSZcQ1MB8GA1UdIwQYMBaAFEhOilIyGA53r9ZoO5GQP0RSZcQ1MAoGCCqG\nSM49BAMCA0gAMEUCIQD+/5z68ewJarixMgYrg/MwyTMwX7ikCaCgU5TN2MU1PQIg\nQe+klrq6COxsmrctClV64Wj4zhGTOhaZG1yN24OXukQ=\n-----END CERTIFICATE-----\n\"\xaa\x04-----BEGIN CERTIFICATE-----\nMIIBbDCCARKgAwIBAwICA+gwCgYIKoZIzj0EAwIwEzERMA8GA1UEAwwIcGVlck9y\nZzAwHhcNMTcwMjIwMTkwNjEwWhcNMTgwMjIwMTkwNjEwWjATMREwDwYDVQQDDAhw\nZWVyT3JnMDBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABKJfDc/CcaiHRipTG2AB\nK5fA0LO9SOlbtC9bZcjLo/xsL157p+3QB3UVF3gt7nkwgMs/ul3FhSEFTk2EVNlF\n1QCjVjBUMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFFQzuQR1RZP/Qn/B\nNDtGSa8n4eN/MB8GA1UdIwQYMBaAFFQzuQR1RZP/Qn/BNDtGSa8n4eN/MAoGCCqG\nSM49BAMCA0gAMEUCIAuG+/Fy3x9JXAD1/rFsu3ZpCKbXiXZLGF7P6Gma8is5AiEA\npSQpRcdukxe4zvcfRmNBjMbNLWCoWlHSQA2jD678QGE=\n-----END CERTIFICATE-----\n\"\xaa\x04-----BEGIN CERTIFICATE-----\nMIIBbDCCARKgAwIBAwICA+gwCgYIKoZIzj0EAwIwEzERMA8GA1UEAwwIcGVlck9y\nZzEwHhcNMTcwMjIwMTkwNjEwWhcNMTgwMjIwMTkwNjEwWjATMREwDwYDVQQDDAhw\nZWVyT3JnMTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJ2S+UvyFgFZYL6qcrKo\nzy72Nkc/RQVzg1VfwC3X7QcnHEVBuCzba1nxdDVE8XPnhmKBWLKh0adn6GKUZpyf\nmbKjVjBUMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFAQlMVsXlKGMEWPf\nKMMM6QVASnlPMB8GA1UdIwQYMBaAFAQlMVsXlKGMEWPfKMMM6QVASnlPMAoGCCqG\nSM49BAMCA0gAMEUCIHr4AD6Xx3R6zFCsveIMnWao9Us88/0uGHoT4ELmMhA1AiEA\nyzfXU5qHp3xBJ1BrKOGi71UmQZVwWfO26INhxcfpCAg=\n-----END CERTIFICATE-----\n\"\xaa\x04-----BEGIN CERTIFICATE-----\nMIIBbDCCARKgAwIBAwICA+gwCgYIKoZIzj0EAwIwEzERMA8GA1UEAwwIcGVlck9y\nZzIwHhcNMTcwMjIwMTkwNjExWhcNMTgwMjIwMTkwNjExWjATMREwDwYDVQQDDAhw\nZWVyT3JnMjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABH3IweQK1AJdcV3FF27a\ngNKhy13Nz2OguzsmUbW85/7pReenAWzs89rEApHXoJqUtNzdZfaLkcq32E1Ilk3N\noN2jVjBUMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFEhOilIyGA53r9Zo\nO5GQP0RSZcQ1MB8GA1UdIwQYMBaAFEhOilIyGA53r9ZoO5GQP0RSZcQ1MAoGCCqG\nSM49BAMCA0gAMEUCIQD+/5z68ewJarixMgYrg/MwyTMwX7ikCaCgU5TN2MU1PQIg\nQe+klrq6COxsmrctClV64Wj4zhGTOhaZG1yN24OXukQ=\n-----END CERTIFICATE-----\n\x1a\x06Admins\"0\n\aWriters\x12%\x12\x1b\b\x01\x12\x17\x12\b\x12\x06\b\x01\x12\x02\b\x00\x1a\v\x12\t\n\aOrg0MSP\x1a\x06Admins\"1\n\x06Admins\x12'\x12\x1d\b\x01\x12\x19\x12\b\x12\x06\b\x01\x12\x02\b\x00\x1a\r\x12\v\n\aOrg0MSP\x10\x01\x1a\x06Admins\"0\n\aReaders\x12%\x12\x1b\b\x01\x12\x17\x12\b\x12\x06\b\x01\x12\x02\b\x00\x1a\v\x12\t\n\aOrg0MSP\x1a\x06Admins\"\"\n\aReaders\x12\x17\x12\r\b\x03\x12\t\n\aReaders\x1a\x06Admins\"\"\n\aWriters\x12\x17\x12\r\b\x03\x12\t\n\aWriters\x1a\x06Admins\"\"\n\x06Admins\x12\x18\x12\x0e\b\x03\x12\n\n\x06Admins\x10\x02\x1a\x06Admins\x1a,\n\x10OrdererAddresses\x12\x18\x12\x0e\n\forderer:7050\x1a\x06Admins\x1a&\n\x10HashingAlgorithm\x12\x12\x12\b\n\x06SHA256\x1a\x06Admins\x1a-\n\x19BlockDataHashingStructure\x12\x10\x12\x06\b\xff\xff\xff\xff\x0f\x1a\x06Admins\"\"\n\aReaders\x12\x17\x12\r\b\x03\x12\t\n\aReaders\x1a\x06Admins\"\"\n\aWriters\x12\x17\x12\r\b\x03\x12\t\n\aWriters\x1a\x06Admins\"\"\n\x06Admins\x12\x18\x12\x0e\b\x03\x12\n\n\x06Admins\x10\x02\x1a\x06Admins\"%\n\x0fAcceptAllPolicy\x12\x12\x12\b\b\x01\x12\x04\x12\x02\x12\x00\x1a\x06Admins\x12\xedI\n\xdfI\nv\nR\b\x02\x1a\x06\b̉\xb9\xc7\x05\"\x04myc0*@ab5bc5364d544da5cfbdd117f6d07c10eee0d703455b0d99092672927d4ad949\x12 \n\x04cert\x12\x18k\xff/\xc1d\xb7\xee%N\xa0EiY\x94\x9e>\x05|\xea\xb2\xea_\xf3}\x12\xe4H\n\xb2H\n\x04myc0\x1a\xa9H\x12\x95\r\n\aOrderer\x12\x89\r\x12\xbe\n\n\nOrdererOrg\x12\xaf\n\x1a\x8c\t\n\x03MSP\x12\x84\t\x12\xf9\b\x12\xf6\b\n\nOrdererMSP\x12\xb2\x04-----BEGIN CERTIFICATE-----\nMIIBcjCCARigAwIBAwICA+gwCgYIKoZIzj0EAwIwFjEUMBIGA1UEAwwLb3JkZXJl\nck9yZzAwHhcNMTcwMjIwMTkwNjEwWhcNMTgwMjIwMTkwNjEwWjAWMRQwEgYDVQQD\nDAtvcmRlcmVyT3JnMDBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABK8Sv0EA9h06\nfmBkUCO+D/b/2INZ2huy+W/HCxSF22c7WGoJbRzQcWtQmW1KqZowUk86RcxVfFqv\njEMFVXzV38SjVjBUMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFCVakuvq\nxEcK8pYMf/Hw8hsexRMTMB8GA1UdIwQYMBaAFCVakuvqxEcK8pYMf/Hw8hsexRMT\nMAoGCCqGSM49BAMCA0gAMEUCIQCmXgDSRTyxpSk+PXg0FNlYZ4ijTVwKgLkYVhod\nzZPfngIgO4y0p3Fs/gNsJYrroKaaVDe955KrPp/O55jYDKAD/oY=\n-----END CERTIFICATE-----\n\"\xb2\x04-----BEGIN CERTIFICATE-----\nMIIBcjCCARigAwIBAwICA+gwCgYIKoZIzj0EAwIwFjEUMBIGA1UEAwwLb3JkZXJl\nck9yZzAwHhcNMTcwMjIwMTkwNjEwWhcNMTgwMjIwMTkwNjEwWjAWMRQwEgYDVQQD\nDAtvcmRlcmVyT3JnMDBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABK8Sv0EA9h06\nfmBkUCO+D/b/2INZ2huy+W/HCxSF22c7WGoJbRzQcWtQmW1KqZowUk86RcxVfFqv\njEMFVXzV38SjVjBUMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFCVakuvq\nxEcK8pYMf/Hw8hsexRMTMB8GA1UdIwQYMBaAFCVakuvqxEcK8pYMf/Hw8hsexRMT\nMAoGCCqGSM49BAMCA0gAMEUCIQCmXgDSRTyxpSk+PXg0FNlYZ4ijTVwKgLkYVhod\nzZPfngIgO4y0p3Fs/gNsJYrroKaaVDe955KrPp/O55jYDKAD/oY=\n-----END CERTIFICATE-----\n\x1a\x06Admins\"3\n\aReaders\x12(\x12\x1e\b\x01\x12\x1a\x12\b\x12\x06\b\x01\x12\x02\b\x00\x1a\x0e\x12\f\n\nOrdererMSP\x1a\x06Admins\"3\n\aWriters\x12(\x12\x1e\b\x01\x12\x1a\x12\b\x12\x06\b\x01\x12\x02\b\x00\x1a\x0e\x12\f\n\nOrdererMSP\x1a\x06Admins\"4\n\x06Admins\x12*\x12 \b\x01\x12\x1c\x12\b\x12\x06\b\x01\x12\x02\b\x00\x1a\x10\x12\x0e\n\nOrdererMSP\x10\x01\x1a\x06Admins\x1a%\n\x0eCreationPolicy\x12\x13\x12\x11\n\x0fAcceptAllPolicy\x1a\"\n\tBatchSize\x12\x15\x12\v\b\n\x10\x80\x80\xc01\x18\x80\x80 \x1a\x06Admins\x1a\x1f\n\fBatchTimeout\x12\x0f\x12\x05\n\x0310s\x1a\x06Admins\x1a\x1f\n\x13ChannelRestrictions\x12\b\x1a\x06Admins\x1a!\n\rConsensusType\x12\x10\x12\x06\n\x04solo\x1a\x06Admins\"\"\n\aWriters\x12\x17\x12\r\b\x03\x12\t\n\aWriters\x1a\x06Admins\"\"\n\x06Admins\x12\x18\x12\x0e\b\x03\x12\n\n\x06Admins\x10\x02\x1a\x06Admins\"*\n\x0fBlockValidation\x12\x17\x12\r\b\x03\x12\t\n\aWriters\x1a\x06Admins\"\"\n\aReaders\x12\x17\x12\r\b\x03\x12\t\n\aReaders\x1a\x06Admins\x12\xf68\n\vApplication\x12\xe68\x12\xfa\x1b\n\aOrg1MSP\x12\xee\x1b\x1a%\n\vAnchorPeers\x12\x16\x12\f\n\n\n\x05peer3\x10\x8b7\x1a\x06Admins\x1a\xad\x1a\n\x03MSP\x12\xa5\x1a\x12\x9a\x1a\x12\x97\x1a\n\aOrg1MSP\x12\xaa\x04-----BEGIN CERTIFICATE-----\nMIIBbDCCARKgAwIBAwICA+gwCgYIKoZIzj0EAwIwEzERMA8GA1UEAwwIcGVlck9y\nZzAwHhcNMTcwMjIwMTkwNjEwWhcNMTgwMjIwMTkwNjEwWjATMREwDwYDVQQDDAhw\nZWVyT3JnMDBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABKJfDc/CcaiHRipTG2AB\nK5fA0LO9SOlbtC9bZcjLo/xsL157p+3QB3UVF3gt7nkwgMs/ul3FhSEFTk2EVNlF\n1QCjVjBUMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFFQzuQR1RZP/Qn/B\nNDtGSa8n4eN/MB8GA1UdIwQYMBaAFFQzuQR1RZP/Qn/BNDtGSa8n4eN/MAoGCCqG\nSM49BAMCA0gAMEUCIAuG+/Fy3x9JXAD1/rFsu3ZpCKbXiXZLGF7P6Gma8is5AiEA\npSQpRcdukxe4zvcfRmNBjMbNLWCoWlHSQA2jD678QGE=\n-----END CERTIFICATE-----\n\x12\xaa\x04-----BEGIN CERTIFICATE-----\nMIIBbDCCARKgAwIBAwICA+gwCgYIKoZIzj0EAwIwEzERMA8GA1UEAwwIcGVlck9y\nZzEwHhcNMTcwMjIwMTkwNjEwWhcNMTgwMjIwMTkwNjEwWjATMREwDwYDVQQDDAhw\nZWVyT3JnMTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJ2S+UvyFgFZYL6qcrKo\nzy72Nkc/RQVzg1VfwC3X7QcnHEVBuCzba1nxdDVE8XPnhmKBWLKh0adn6GKUZpyf\nmbKjVjBUMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFAQlMVsXlKGMEWPf\nKMMM6QVASnlPMB8GA1UdIwQYMBaAFAQlMVsXlKGMEWPfKMMM6QVASnlPMAoGCCqG\nSM49BAMCA0gAMEUCIHr4AD6Xx3R6zFCsveIMnWao9Us88/0uGHoT4ELmMhA1AiEA\nyzfXU5qHp3xBJ1BrKOGi71UmQZVwWfO26INhxcfpCAg=\n-----END CERTIFICATE-----\n\x12\xaa\x04-----BEGIN CERTIFICATE-----\nMIIBbDCCARKgAwIBAwICA+gwCgYIKoZIzj0EAwIwEzERMA8GA1UEAwwIcGVlck9y\nZzIwHhcNMTcwMjIwMTkwNjExWhcNMTgwMjIwMTkwNjExWjATMREwDwYDVQQDDAhw\nZWVyT3JnMjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABH3IweQK1AJdcV3FF27a\ngNKhy13Nz2OguzsmUbW85/7pReenAWzs89rEApHXoJqUtNzdZfaLkcq32E1Ilk3N\noN2jVjBUMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFEhOilIyGA53r9Zo\nO5GQP0RSZcQ1MB8GA1UdIwQYMBaAFEhOilIyGA53r9ZoO5GQP0RSZcQ1MAoGCCqG\nSM49BAMCA0gAMEUCIQD+/5z68ewJarixMgYrg/MwyTMwX7ikCaCgU5TN2MU1PQIg\nQe+klrq6COxsmrctClV64Wj4zhGTOhaZG1yN24OXukQ=\n-----END CERTIFICATE-----\n\"\xaa\x04-----BEGIN CERTIFICATE-----\nMIIBbDCCARKgAwIBAwICA+gwCgYIKoZIzj0EAwIwEzERMA8GA1UEAwwIcGVlck9y\nZzAwHhcNMTcwMjIwMTkwNjEwWhcNMTgwMjIwMTkwNjEwWjATMREwDwYDVQQDDAhw\nZWVyT3JnMDBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABKJfDc/CcaiHRipTG2AB\nK5fA0LO9SOlbtC9bZcjLo/xsL157p+3QB3UVF3gt7nkwgMs/ul3FhSEFTk2EVNlF\n1QCjVjBUMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFFQzuQR1RZP/Qn/B\nNDtGSa8n4eN/MB8GA1UdIwQYMBaAFFQzuQR1RZP/Qn/BNDtGSa8n4eN/MAoGCCqG\nSM49BAMCA0gAMEUCIAuG+/Fy3x9JXAD1/rFsu3ZpCKbXiXZLGF7P6Gma8is5AiEA\npSQpRcdukxe4zvcfRmNBjMbNLWCoWlHSQA2jD678QGE=\n-----END CERTIFICATE-----\n\"\xaa\x04-----BEGIN CERTIFICATE-----\nMIIBbDCCARKgAwIBAwICA+gwCgYIKoZIzj0EAwIwEzERMA8GA1UEAwwIcGVlck9y\nZzEwHhcNMTcwMjIwMTkwNjEwWhcNMTgwMjIwMTkwNjEwWjATMREwDwYDVQQDDAhw\nZWVyT3JnMTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJ2S+UvyFgFZYL6qcrKo\nzy72Nkc/RQVzg1VfwC3X7QcnHEVBuCzba1nxdDVE8XPnhmKBWLKh0adn6GKUZpyf\nmbKjVjBUMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFAQlMVsXlKGMEWPf\nKMMM6QVASnlPMB8GA1UdIwQYMBaAFAQlMVsXlKGMEWPfKMMM6QVASnlPMAoGCCqG\nSM49BAMCA0gAMEUCIHr4AD6Xx3R6zFCsveIMnWao9Us88/0uGHoT4ELmMhA1AiEA\nyzfXU5qHp3xBJ1BrKOGi71UmQZVwWfO26INhxcfpCAg=\n-----END CERTIFICATE-----\n\"\xaa\x04-----BEGIN CERTIFICATE-----\nMIIBbDCCARKgAwIBAwICA+gwCgYIKoZIzj0EAwIwEzERMA8GA1UEAwwIcGVlck9y\nZzIwHhcNMTcwMjIwMTkwNjExWhcNMTgwMjIwMTkwNjExWjATMREwDwYDVQQDDAhw\nZWVyT3JnMjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABH3IweQK1AJdcV3FF27a\ngNKhy13Nz2OguzsmUbW85/7pReenAWzs89rEApHXoJqUtNzdZfaLkcq32E1Ilk3N\noN2jVjBUMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFEhOilIyGA53r9Zo\nO5GQP0RSZcQ1MB8GA1UdIwQYMBaAFEhOilIyGA53r9ZoO5GQP0RSZcQ1MAoGCCqG\nSM49BAMCA0gAMEUCIQD+/5z68ewJarixMgYrg/MwyTMwX7ikCaCgU5TN2MU1PQIg\nQe+klrq6COxsmrctClV64Wj4zhGTOhaZG1yN24OXukQ=\n-----END CERTIFICATE-----\n\x1a\x06Admins\"1\n\x06Admins\x12'\x12\x1d\b\x01\x12\x19\x12\b\x12\x06\b\x01\x12\x02\b\x00\x1a\r\x12\v\n\aOrg1MSP\x10\x01\x1a\x06Admins\"0\n\aReaders\x12%\x12\x1b\b\x01\x12\x17\x12\b\x12\x06\b\x01\x12\x02\b\x00\x1a\v\x12\t\n\aOrg1MSP\x1a\x06Admins\"0\n\aWriters\x12%\x12\x1b\b\x01\x12\x17\x12\b\x12\x06\b\x01\x12\x02\b\x00\x1a\v\x12\t\n\aOrg1MSP\x1a\x06Admins\x12\xfa\x1b\n\aOrg0MSP\x12\xee\x1b\x1a%\n\vAnchorPeers\x12\x16\x12\f\n\n\n\x05peer0\x10\x8b7\x1a\x06Admins\x1a\xad\x1a\n\x03MSP\x12\xa5\x1a\x12\x9a\x1a\x12\x97\x1a\n\aOrg0MSP\x12\xaa\x04-----BEGIN CERTIFICATE-----\nMIIBbDCCARKgAwIBAwICA+gwCgYIKoZIzj0EAwIwEzERMA8GA1UEAwwIcGVlck9y\nZzAwHhcNMTcwMjIwMTkwNjEwWhcNMTgwMjIwMTkwNjEwWjATMREwDwYDVQQDDAhw\nZWVyT3JnMDBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABKJfDc/CcaiHRipTG2AB\nK5fA0LO9SOlbtC9bZcjLo/xsL157p+3QB3UVF3gt7nkwgMs/ul3FhSEFTk2EVNlF\n1QCjVjBUMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFFQzuQR1RZP/Qn/B\nNDtGSa8n4eN/MB8GA1UdIwQYMBaAFFQzuQR1RZP/Qn/BNDtGSa8n4eN/MAoGCCqG\nSM49BAMCA0gAMEUCIAuG+/Fy3x9JXAD1/rFsu3ZpCKbXiXZLGF7P6Gma8is5AiEA\npSQpRcdukxe4zvcfRmNBjMbNLWCoWlHSQA2jD678QGE=\n-----END CERTIFICATE-----\n\x12\xaa\x04-----BEGIN CERTIFICATE-----\nMIIBbDCCARKgAwIBAwICA+gwCgYIKoZIzj0EAwIwEzERMA8GA1UEAwwIcGVlck9y\nZzEwHhcNMTcwMjIwMTkwNjEwWhcNMTgwMjIwMTkwNjEwWjATMREwDwYDVQQDDAhw\nZWVyT3JnMTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJ2S+UvyFgFZYL6qcrKo\nzy72Nkc/RQVzg1VfwC3X7QcnHEVBuCzba1nxdDVE8XPnhmKBWLKh0adn6GKUZpyf\nmbKjVjBUMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFAQlMVsXlKGMEWPf\nKMMM6QVASnlPMB8GA1UdIwQYMBaAFAQlMVsXlKGMEWPfKMMM6QVASnlPMAoGCCqG\nSM49BAMCA0gAMEUCIHr4AD6Xx3R6zFCsveIMnWao9Us88/0uGHoT4ELmMhA1AiEA\nyzfXU5qHp3xBJ1BrKOGi71UmQZVwWfO26INhxcfpCAg=\n-----END CERTIFICATE-----\n\x12\xaa\x04-----BEGIN CERTIFICATE-----\nMIIBbDCCARKgAwIBAwICA+gwCgYIKoZIzj0EAwIwEzERMA8GA1UEAwwIcGVlck9y\nZzIwHhcNMTcwMjIwMTkwNjExWhcNMTgwMjIwMTkwNjExWjATMREwDwYDVQQDDAhw\nZWVyT3JnMjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABH3IweQK1AJdcV3FF27a\ngNKhy13Nz2OguzsmUbW85/7pReenAWzs89rEApHXoJqUtNzdZfaLkcq32E1Ilk3N\noN2jVjBUMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFEhOilIyGA53r9Zo\nO5GQP0RSZcQ1MB8GA1UdIwQYMBaAFEhOilIyGA53r9ZoO5GQP0RSZcQ1MAoGCCqG\nSM49BAMCA0gAMEUCIQD+/5z68ewJarixMgYrg/MwyTMwX7ikCaCgU5TN2MU1PQIg\nQe+klrq6COxsmrctClV64Wj4zhGTOhaZG1yN24OXukQ=\n-----END CERTIFICATE-----\n\"\xaa\x04-----BEGIN CERTIFICATE-----\nMIIBbDCCARKgAwIBAwICA+gwCgYIKoZIzj0EAwIwEzERMA8GA1UEAwwIcGVlck9y\nZzAwHhcNMTcwMjIwMTkwNjEwWhcNMTgwMjIwMTkwNjEwWjATMREwDwYDVQQDDAhw\nZWVyT3JnMDBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABKJfDc/CcaiHRipTG2AB\nK5fA0LO9SOlbtC9bZcjLo/xsL157p+3QB3UVF3gt7nkwgMs/ul3FhSEFTk2EVNlF\n1QCjVjBUMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFFQzuQR1RZP/Qn/B\nNDtGSa8n4eN/MB8GA1UdIwQYMBaAFFQzuQR1RZP/Qn/BNDtGSa8n4eN/MAoGCCqG\nSM49BAMCA0gAMEUCIAuG+/Fy3x9JXAD1/rFsu3ZpCKbXiXZLGF7P6Gma8is5AiEA\npSQpRcdukxe4zvcfRmNBjMbNLWCoWlHSQA2jD678QGE=\n-----END CERTIFICATE-----\n\"\xaa\x04-----BEGIN CERTIFICATE-----\nMIIBbDCCARKgAwIBAwICA+gwCgYIKoZIzj0EAwIwEzERMA8GA1UEAwwIcGVlck9y\nZzEwHhcNMTcwMjIwMTkwNjEwWhcNMTgwMjIwMTkwNjEwWjATMREwDwYDVQQDDAhw\nZWVyT3JnMTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJ2S+UvyFgFZYL6qcrKo\nzy72Nkc/RQVzg1VfwC3X7QcnHEVBuCzba1nxdDVE8XPnhmKBWLKh0adn6GKUZpyf\nmbKjVjBUMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFAQlMVsXlKGMEWPf\nKMMM6QVASnlPMB8GA1UdIwQYMBaAFAQlMVsXlKGMEWPfKMMM6QVASnlPMAoGCCqG\nSM49BAMCA0gAMEUCIHr4AD6Xx3R6zFCsveIMnWao9Us88/0uGHoT4ELmMhA1AiEA\nyzfXU5qHp3xBJ1BrKOGi71UmQZVwWfO26INhxcfpCAg=\n-----END CERTIFICATE-----\n\"\xaa\x04-----BEGIN CERTIFICATE-----\nMIIBbDCCARKgAwIBAwICA+gwCgYIKoZIzj0EAwIwEzERMA8GA1UEAwwIcGVlck9y\nZzIwHhcNMTcwMjIwMTkwNjExWhcNMTgwMjIwMTkwNjExWjATMREwDwYDVQQDDAhw\nZWVyT3JnMjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABH3IweQK1AJdcV3FF27a\ngNKhy13Nz2OguzsmUbW85/7pReenAWzs89rEApHXoJqUtNzdZfaLkcq32E1Ilk3N\noN2jVjBUMBIGA1UdEwEB/wQIMAYBAf8CAQAwHQYDVR0OBBYEFEhOilIyGA53r9Zo\nO5GQP0RSZcQ1MB8GA1UdIwQYMBaAFEhOilIyGA53r9ZoO5GQP0RSZcQ1MAoGCCqG\nSM49BAMCA0gAMEUCIQD+/5z68ewJarixMgYrg/MwyTMwX7ikCaCgU5TN2MU1PQIg\nQe+klrq6COxsmrctClV64Wj4zhGTOhaZG1yN24OXukQ=\n-----END CERTIFICATE-----\n\x1a\x06Admins\"0\n\aReaders\x12%\x12\x1b\b\x01\x12\x17\x12\b\x12\x06\b\x01\x12\x02\b\x00\x1a\v\x12\t\n\aOrg0MSP\x1a\x06Admins\"0\n\aWriters\x12%\x12\x1b\b\x01\x12\x17\x12\b\x12\x06\b\x01\x12\x02\b\x00\x1a\v\x12\t\n\aOrg0MSP\x1a\x06Admins\"1\n\x06Admins\x12'\x12\x1d\b\x01\x12\x19\x12\b\x12\x06\b\x01\x12\x02\b\x00\x1a\r\x12\v\n\aOrg0MSP\x10\x01\x1a\x06Admins\"\"\n\aWriters\x12\x17\x12\r\b\x03\x12\t\n\aWriters\x1a\x06Admins\"\"\n\x06Admins\x12\x18\x12\x0e\b\x03\x12\n\n\x06Admins\x10\x02\x1a\x06Admins\"\"\n\aReaders\x12\x17\x12\r\b\x03\x12\t\n\aReaders\x1a\x06Admins\x1a,\n\x10OrdererAddresses\x12\x18\x12\x0e\n\forderer:7050\x1a\x06Admins\x1a&\n\x10HashingAlgorithm\x12\x12\x12\b\n\x06SHA256\x1a\x06Admins\x1a-\n\x19BlockDataHashingStructure\x12\x10\x12\x06\b\xff\xff\xff\xff\x0f\x1a\x06Admins\"\"\n\aReaders\x12\x17\x12\r\b\x03\x12\t\n\aReaders\x1a\x06Admins\"\"\n\aWriters\x12\x17\x12\r\b\x03\x12\t\n\aWriters\x1a\x06Admins\"\"\n\x06Admins\x12\x18\x12\x0e\b\x03\x12\n\n\x06Admins\x10\x02\x1a\x06Admins\"%\n\x0fAcceptAllPolicy\x12\x12\x12\b\b\x01\x12\x04\x12\x02\x12\x00\x1a\x06Admins\x12-\n \n\x04cert\x12\x18oae\x8bO|+V/p\x1c\xa4\xe3\x86\x03*\xee\xe4,\xf95\xca\aC\x12\tsignature\x12\tsignature" 2:"0D\x02 O]\x95\xa5@t&\xa4Z\r\x1f\x11R\a\x06\xfb\xe5go\x0f\xca&\x13\x8f\x91d1\xb7@\xda\r\f\x02 7)׀\xfb%\x9b\xbc\xbd6\xfeR\x13\x9e\x9f\xa2w;\x1cD\x93\x15h)\x8c\xef:Yy\xf9\xbc\xbb" >metadata:<metadata:"" metadata:"" metadata:"" metadata:"" > 
+2017-04-12 15:17:41.224 UTC [main] main -> INFO 009[0m Exiting.....
+===================== Channel "myc0" is created successfully ===================== 
+
+
+Total execution time 2 secs
+
+-----------------------------------------
+Orderer IP 172.20.0.5
+PEER0 IP 172.20.0.6
+PEER1 IP 172.20.0.7
+PEER2 IP 172.20.0.8
+PEER3 IP 172.20.0.9
+Channel name prefix: myc
+Total channels: 1
+Total Chaincodes: 1
+Total Endorsers: 4
+-----------------------------------------
+====================== Joing PEER0 on all channels ===============
+[36m2017-04-12 15:17:41.331 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2017-04-12 15:17:41.331 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+[36m2017-04-12 15:17:41.332 UTC [msp] Sign -> DEBU 003[0m Sign: plaintext: 0A92050A5C08011A0C08958AB9C70510...3A5979F9BCBB1A080A000A000A000A00 
+[36m2017-04-12 15:17:41.332 UTC [msp] Sign -> DEBU 004[0m Sign: digest: 13F10471CF8740133B1D9640356D47916DD955BDA93316012DFA168817313921 
+Peer joined the channel!
+2017-04-12 15:17:41.368 UTC [main] main -> INFO 005[0m Exiting.....
+===================== PEER0 joined on the channel "myc0" ===================== 
+===================== PEER0 joined on 1 channel(s) ===================== 
+
+====================== Joing PEER1 on all channels ===============
+[36m2017-04-12 15:17:45.414 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2017-04-12 15:17:45.414 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+[36m2017-04-12 15:17:45.416 UTC [msp] Sign -> DEBU 003[0m Sign: plaintext: 0A92050A5C08011A0C08998AB9C70510...3A5979F9BCBB1A080A000A000A000A00 
+[36m2017-04-12 15:17:45.416 UTC [msp] Sign -> DEBU 004[0m Sign: digest: 64FD4D50AE9EE8BCA6D56F53E991B6EF94686BC5B8D72192EC11124461A83B65 
+Peer joined the channel!
+2017-04-12 15:17:45.456 UTC [main] main -> INFO 005[0m Exiting.....
+===================== PEER1 joined on the channel "myc0" ===================== 
+===================== PEER1 joined on 1 channel(s) ===================== 
+
+====================== Joing PEER2 on all channels ===============
+[36m2017-04-12 15:17:49.517 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2017-04-12 15:17:49.517 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+[36m2017-04-12 15:17:49.518 UTC [msp] Sign -> DEBU 003[0m Sign: plaintext: 0A92050A5C08011A0C089D8AB9C70510...3A5979F9BCBB1A080A000A000A000A00 
+[36m2017-04-12 15:17:49.518 UTC [msp] Sign -> DEBU 004[0m Sign: digest: 740041524934989D18FDC60E4CB8852D8E93B6EB5B90159AE5C587B57C22AC56 
+Peer joined the channel!
+2017-04-12 15:17:49.555 UTC [main] main -> INFO 005[0m Exiting.....
+===================== PEER2 joined on the channel "myc0" ===================== 
+===================== PEER2 joined on 1 channel(s) ===================== 
+
+====================== Joing PEER3 on all channels ===============
+[36m2017-04-12 15:17:53.603 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2017-04-12 15:17:53.603 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+[36m2017-04-12 15:17:53.605 UTC [msp] Sign -> DEBU 003[0m Sign: plaintext: 0A92050A5C08011A0C08A18AB9C70510...3A5979F9BCBB1A080A000A000A000A00 
+[36m2017-04-12 15:17:53.605 UTC [msp] Sign -> DEBU 004[0m Sign: digest: 0041A4F511847E66F435D58135EBA87CA6B510D74BF67C87F352CF8E42AA740C 
+Peer joined the channel!
+2017-04-12 15:17:53.670 UTC [main] main -> INFO 005[0m Exiting.....
+===================== PEER3 joined on the channel "myc0" ===================== 
+===================== PEER3 joined on 1 channel(s) ===================== 
+
+
+Total execution time 16 secs
+
+-----------------------------------------
+Orderer IP 172.20.0.5
+PEER0 IP 172.20.0.6
+PEER1 IP 172.20.0.7
+PEER2 IP 172.20.0.8
+PEER3 IP 172.20.0.9
+Channel name prefix: myc
+Total channels: 1
+Total Chaincodes: 1
+Total Endorsers: 4
+-----------------------------------------
+Installing chaincode on all Peers ...
+[36m2017-04-12 15:17:57.794 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2017-04-12 15:17:57.794 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+[36m2017-04-12 15:17:57.795 UTC [golang-platform] collectChaincodeFiles -> DEBU 003[0m not using input for hash computation for path:"github.com/hyperledger/fabric/examples/chaincode/go/chaincode_example02" name:"mycc0" version:"1"  
+[36m2017-04-12 15:17:57.795 UTC [golang-platform] getCodeFromFS -> DEBU 004[0m getCodeFromFS github.com/hyperledger/fabric/examples/chaincode/go/chaincode_example02
+[36m2017-04-12 15:17:57.796 UTC [util] HashFilesInDir -> DEBU 005[0m hashFiles /opt/gopath/src/github.com/hyperledger/fabric/examples/chaincode/go/chaincode_example02
+2017-04-12 15:17:57.798 UTC [golang-platform] writeGopathSrc -> INFO 006[0m rootDirectory = /opt/gopath/src
+2017-04-12 15:17:57.798 UTC [container] WriteFolderToTarPackage -> INFO 007[0m rootDirectory = /opt/gopath/src
+[36m2017-04-12 15:17:57.861 UTC [msp] Sign -> DEBU 008[0m Sign: plaintext: 0A92050A5C08031A0C08A58AB9C70510...BDFE7F000000FFFFBF7C151600DA0000 
+[36m2017-04-12 15:17:57.861 UTC [msp] Sign -> DEBU 009[0m Sign: digest: 14F70B2EA8D3486DDC82441C943433E3D266011E72EC66A3B6465FAA5FF0A391 
+[36m2017-04-12 15:17:57.865 UTC [chaincodeCmd] install -> DEBU 00a[0m Installed remotely %v response:<status:200 payload:"OK" > 
+2017-04-12 15:17:57.865 UTC [main] main -> INFO 00b[0m Exiting.....
+===================== Chaincode 'mycc0' is installed on remote peer PEER0 ===================== 
+
+[36m2017-04-12 15:17:57.943 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2017-04-12 15:17:57.943 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+[36m2017-04-12 15:17:57.943 UTC [golang-platform] collectChaincodeFiles -> DEBU 003[0m not using input for hash computation for path:"github.com/hyperledger/fabric/examples/chaincode/go/chaincode_example02" name:"mycc0" version:"1"  
+[36m2017-04-12 15:17:57.943 UTC [golang-platform] getCodeFromFS -> DEBU 004[0m getCodeFromFS github.com/hyperledger/fabric/examples/chaincode/go/chaincode_example02
+[36m2017-04-12 15:17:57.944 UTC [util] HashFilesInDir -> DEBU 005[0m hashFiles /opt/gopath/src/github.com/hyperledger/fabric/examples/chaincode/go/chaincode_example02
+2017-04-12 15:17:57.947 UTC [golang-platform] writeGopathSrc -> INFO 006[0m rootDirectory = /opt/gopath/src
+2017-04-12 15:17:57.947 UTC [container] WriteFolderToTarPackage -> INFO 007[0m rootDirectory = /opt/gopath/src
+[36m2017-04-12 15:17:57.985 UTC [msp] Sign -> DEBU 008[0m Sign: plaintext: 0A92050A5C08031A0C08A58AB9C70510...BDFE7F000000FFFFBF7C151600DA0000 
+[36m2017-04-12 15:17:57.985 UTC [msp] Sign -> DEBU 009[0m Sign: digest: 7F3BCEE250B43F2FDBA760A788ABB41D88506437407CD1B3B2EAAB7AD762839D 
+[36m2017-04-12 15:17:57.988 UTC [chaincodeCmd] install -> DEBU 00a[0m Installed remotely %v response:<status:200 payload:"OK" > 
+2017-04-12 15:17:57.988 UTC [main] main -> INFO 00b[0m Exiting.....
+===================== Chaincode 'mycc0' is installed on remote peer PEER1 ===================== 
+
+[36m2017-04-12 15:17:58.026 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2017-04-12 15:17:58.027 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+[36m2017-04-12 15:17:58.027 UTC [golang-platform] collectChaincodeFiles -> DEBU 003[0m not using input for hash computation for path:"github.com/hyperledger/fabric/examples/chaincode/go/chaincode_example02" name:"mycc0" version:"1"  
+[36m2017-04-12 15:17:58.027 UTC [golang-platform] getCodeFromFS -> DEBU 004[0m getCodeFromFS github.com/hyperledger/fabric/examples/chaincode/go/chaincode_example02
+[36m2017-04-12 15:17:58.027 UTC [util] HashFilesInDir -> DEBU 005[0m hashFiles /opt/gopath/src/github.com/hyperledger/fabric/examples/chaincode/go/chaincode_example02
+2017-04-12 15:17:58.029 UTC [golang-platform] writeGopathSrc -> INFO 006[0m rootDirectory = /opt/gopath/src
+2017-04-12 15:17:58.029 UTC [container] WriteFolderToTarPackage -> INFO 007[0m rootDirectory = /opt/gopath/src
+[36m2017-04-12 15:17:58.061 UTC [msp] Sign -> DEBU 008[0m Sign: plaintext: 0A91050A5B08031A0B08A68AB9C70510...BDFE7F000000FFFFBF7C151600DA0000 
+[36m2017-04-12 15:17:58.061 UTC [msp] Sign -> DEBU 009[0m Sign: digest: 0CAA5796C5E3C26576D6EA9E4A2EDC3193C9892B74BB74BBB2F3FB06B3932FC5 
+[36m2017-04-12 15:17:58.065 UTC [chaincodeCmd] install -> DEBU 00a[0m Installed remotely %v response:<status:200 payload:"OK" > 
+2017-04-12 15:17:58.065 UTC [main] main -> INFO 00b[0m Exiting.....
+===================== Chaincode 'mycc0' is installed on remote peer PEER2 ===================== 
+
+[36m2017-04-12 15:17:58.155 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2017-04-12 15:17:58.155 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+[36m2017-04-12 15:17:58.155 UTC [golang-platform] collectChaincodeFiles -> DEBU 003[0m not using input for hash computation for path:"github.com/hyperledger/fabric/examples/chaincode/go/chaincode_example02" name:"mycc0" version:"1"  
+[36m2017-04-12 15:17:58.155 UTC [golang-platform] getCodeFromFS -> DEBU 004[0m getCodeFromFS github.com/hyperledger/fabric/examples/chaincode/go/chaincode_example02
+[36m2017-04-12 15:17:58.156 UTC [util] HashFilesInDir -> DEBU 005[0m hashFiles /opt/gopath/src/github.com/hyperledger/fabric/examples/chaincode/go/chaincode_example02
+2017-04-12 15:17:58.157 UTC [golang-platform] writeGopathSrc -> INFO 006[0m rootDirectory = /opt/gopath/src
+2017-04-12 15:17:58.157 UTC [container] WriteFolderToTarPackage -> INFO 007[0m rootDirectory = /opt/gopath/src
+[36m2017-04-12 15:17:58.229 UTC [msp] Sign -> DEBU 008[0m Sign: plaintext: 0A91050A5B08031A0B08A68AB9C70510...BDFE7F000000FFFFBF7C151600DA0000 
+[36m2017-04-12 15:17:58.229 UTC [msp] Sign -> DEBU 009[0m Sign: digest: CE474B80B81B239A7CB999DDD0976DB3F2044258F3DEFB8C675348BDC458A58E 
+[36m2017-04-12 15:17:58.234 UTC [chaincodeCmd] install -> DEBU 00a[0m Installed remotely %v response:<status:200 payload:"OK" > 
+2017-04-12 15:17:58.234 UTC [main] main -> INFO 00b[0m Exiting.....
+===================== Chaincode 'mycc0' is installed on remote peer PEER3 ===================== 
+
+
+Total execution time 1 secs
+
+-----------------------------------------
+Orderer IP 172.20.0.5
+PEER0 IP 172.20.0.6
+PEER1 IP 172.20.0.7
+PEER2 IP 172.20.0.8
+PEER3 IP 172.20.0.9
+Channel name prefix: myc
+Total channels: 1
+Total Chaincodes: 1
+Total Endorsers: 4
+-----------------------------------------
+Instantiating chaincode on all channels on PEER0 ...
+[36m2017-04-12 15:17:58.334 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2017-04-12 15:17:58.334 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+2017-04-12 15:17:58.334 UTC [chaincodeCmd] checkChaincodeCmdParams -> INFO 003[0m Using default escc
+2017-04-12 15:17:58.334 UTC [chaincodeCmd] checkChaincodeCmdParams -> INFO 004[0m Using default vscc
+[36m2017-04-12 15:17:58.335 UTC [msp] Sign -> DEBU 005[0m Sign: plaintext: 0A98050A6208031A0C08A68AB9C70510...314D53500A04657363630A0476736363 
+[36m2017-04-12 15:17:58.335 UTC [msp] Sign -> DEBU 006[0m Sign: digest: 662DC2F0634C858555B04566EBE6BBC82321C84C146291DC0F8573991045458D 
+[36m2017-04-12 15:18:13.084 UTC [msp] Sign -> DEBU 007[0m Sign: plaintext: 0A98050A6208031A0C08A68AB9C70510...EE13F81DB49EA588E139F212D92A5595 
+[36m2017-04-12 15:18:13.084 UTC [msp] Sign -> DEBU 008[0m Sign: digest: F0E48B7AA55945D4EF462BDC9A4EF560B01468FEECB8C6C7316E56D2E4B3FC0A 
+2017-04-12 15:18:13.087 UTC [main] main -> INFO 009[0m Exiting.....
+===================== Chaincode 'mycc0' Instantiation on PEER0 on channel 'myc0' is successful ===================== 
+
+
+Total execution time 15 secs
+
+-----------------------------------------
+Orderer IP 172.20.0.5
+PEER0 IP 172.20.0.6
+PEER1 IP 172.20.0.7
+PEER2 IP 172.20.0.8
+PEER3 IP 172.20.0.9
+Channel name prefix: myc
+Total channels: 1
+Total Chaincodes: 1
+Total Endorsers: 4
+-----------------------------------------
+send Invokes/Queries on all channels ...
+===================== Querying on PEER0 on myc0/mycc0... ===================== 
+Attempting to Query PEER0 ...3 secs
+Attempting to Query PEER0 ...6 secs
+Attempting to Query PEER0 ...9 secs
+Attempting to Query PEER0 ...12 secs
+
+[36m2017-04-12 15:18:25.423 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2017-04-12 15:18:25.423 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+[36m2017-04-12 15:18:25.423 UTC [msp] Sign -> DEBU 003[0m Sign: plaintext: 0A99050A6308031A0C08C18AB9C70510...796363301A0A0A0571756572790A0161 
+[36m2017-04-12 15:18:25.423 UTC [msp] Sign -> DEBU 004[0m Sign: digest: 3A147382776F60A3A9E7DF2089CF6F543B8569A8B38553030781ADA876C679FA 
+Query Result: 1000
+2017-04-12 15:18:25.430 UTC [main] main -> INFO 005[0m Exiting.....
+===================== Query on PEER0 on myc0/mycc0 is successful ===================== 
+
+[36m2017-04-12 15:18:25.537 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2017-04-12 15:18:25.537 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+[36m2017-04-12 15:18:25.538 UTC [msp] Sign -> DEBU 003[0m Sign: plaintext: 0A99050A6308031A0C08C18AB9C70510...696E766F6B650A01610A01620A023130 
+[36m2017-04-12 15:18:25.538 UTC [msp] Sign -> DEBU 004[0m Sign: digest: 8E56246EFBBF57A100A01AD03FE0775A711D3CFE5E46A0A0A7CF65D760BDEF6C 
+[36m2017-04-12 15:18:25.564 UTC [msp] Sign -> DEBU 005[0m Sign: plaintext: 0A99050A6308031A0C08C18AB9C70510...EC00A2B39EF25B39CFEABCB2ACE0704C 
+[36m2017-04-12 15:18:25.564 UTC [msp] Sign -> DEBU 006[0m Sign: digest: 7D33B011A47B7DB5550D7439D12EE1141FA3E8BB5A10B85CA9A60A001A958689 
+2017-04-12 15:18:25.566 UTC [chaincodeCmd] chaincodeInvokeOrQuery -> INFO 007[0m Invoke result: version:1 response:<status:200 message:"OK" > payload:"\n \257\030\274\200l\001\032\346Oq4\023\213-\352\271\226\370\225\255\233\303\243\215p\352B=\177\323v\310\022V\nO\022\027\n\004lccc\022\017\n\r\n\005mycc0\022\004\010\001\020\001\0224\n\005mycc0\022+\n\t\n\001a\022\004\010\001\020\001\n\t\n\001b\022\004\010\001\020\001\032\010\n\001a\032\003990\032\t\n\001b\032\0042010\032\003\010\310\001" endorsement:<endorser:"\n\007Org0MSP\022\210\004-----BEGIN -----\nMIIBYzCCAQmgAwIBAwICA+gwCgYIKoZIzj0EAwIwEzERMA8GA1UEAwwIcGVlck9y\nZzAwHhcNMTcwMjIwMTkwNjExWhcNMTgwMjIwMTkwNjExWjAQMQ4wDAYDVQQDDAVw\nZWVyMDBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABEF6dfqjqfbIgZuOR+dgoJMl\n/FaUlGI70A/ixmVUY83Yp4YtV3FDBSOPiO5O+s8pHnpbwB1LqhrxAx1Plr0M/UWj\nUDBOMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFBY2bc84vLEwkX1fSAER2p48jJXw\nMB8GA1UdIwQYMBaAFFQzuQR1RZP/Qn/BNDtGSa8n4eN/MAoGCCqGSM49BAMCA0gA\nMEUCIQDeDZ71L+OTYcbbqiDNRf0L8OExO59mH1O3xpdwMAM0MgIgXySG4sv9yV31\nWcWRFfRFyu7o3T72kqiLZ1nkDuJ8jWI=\n-----END -----\n" signature:"0D\002 Y0\277i\215\261 \330\032>\353U\217\301\223\2318u\232\306\262\222Y\362\001\304H;V\212)\372\002 #\352\210\351\372\252\006\253\271N*\234\272\232\377)\354\000\242\263\236\362[9\317\352\274\262\254\340pL" > 
+2017-04-12 15:18:25.566 UTC [main] main -> INFO 008[0m Exiting.....
+===================== Invoke transaction on PEER0 on myc0/mycc0 is successful ===================== 
+
+===================== Querying on PEER0 on myc0/mycc0... ===================== 
+Attempting to Query PEER0 ...3 secs
+Attempting to Query PEER0 ...6 secs
+Attempting to Query PEER0 ...9 secs
+Attempting to Query PEER0 ...12 secs
+
+[36m2017-04-12 15:18:37.859 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2017-04-12 15:18:37.859 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+[36m2017-04-12 15:18:37.860 UTC [msp] Sign -> DEBU 003[0m Sign: plaintext: 0A99050A6308031A0C08CD8AB9C70510...796363301A0A0A0571756572790A0161 
+[36m2017-04-12 15:18:37.860 UTC [msp] Sign -> DEBU 004[0m Sign: digest: 8971F6A32CD9B24DDA882ADD7C283FA6DD161CB36DADC640299248C55BB714B2 
+Query Result: 990
+2017-04-12 15:18:37.865 UTC [main] main -> INFO 005[0m Exiting.....
+===================== Query on PEER0 on myc0/mycc0 is successful ===================== 
+
+===================== Querying on PEER1 on myc0/mycc0... ===================== 
+Attempting to Query PEER1 ...3 secs
+
+[36m2017-04-12 15:18:40.947 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2017-04-12 15:18:40.947 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+[36m2017-04-12 15:18:40.947 UTC [msp] Sign -> DEBU 003[0m Sign: plaintext: 0A99050A6308031A0C08D08AB9C70510...796363301A0A0A0571756572790A0161 
+[36m2017-04-12 15:18:40.947 UTC [msp] Sign -> DEBU 004[0m Sign: digest: 3B84CC467F5179338C8DD88CB12FF6BE668EF5B9AA72C4111D78443929CEFCF1 
+Query Result: 990
+2017-04-12 15:18:58.334 UTC [main] main -> INFO 005[0m Exiting.....
+===================== Query on PEER1 on myc0/mycc0 is successful ===================== 
+
+[36m2017-04-12 15:18:58.376 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2017-04-12 15:18:58.376 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+[36m2017-04-12 15:18:58.377 UTC [msp] Sign -> DEBU 003[0m Sign: plaintext: 0A99050A6308031A0C08E28AB9C70510...696E766F6B650A01610A01620A023130 
+[36m2017-04-12 15:18:58.377 UTC [msp] Sign -> DEBU 004[0m Sign: digest: BFFD7897C8CC46351356425C494CC50C211E845ED5DA6EA320594C819BC73ED1 
+[36m2017-04-12 15:18:58.385 UTC [msp] Sign -> DEBU 005[0m Sign: plaintext: 0A99050A6308031A0C08E28AB9C70510...1582E9CC8ED22F7254D2F522F3789B4D 
+[36m2017-04-12 15:18:58.385 UTC [msp] Sign -> DEBU 006[0m Sign: digest: CCEF977F823FB3E5AA903F1258FD96EC8C4E525D769B203AEC429967A7D05CC6 
+2017-04-12 15:18:58.387 UTC [chaincodeCmd] chaincodeInvokeOrQuery -> INFO 007[0m Invoke result: version:1 response:<status:200 message:"OK" > payload:"\n \365`}\371\317\212\277e.\226\341t2\274\035\323\321\206\030\312XgI\346\303q\376\317\201\321\320\352\022V\nO\022\027\n\004lccc\022\017\n\r\n\005mycc0\022\004\010\001\020\001\0224\n\005mycc0\022+\n\t\n\001a\022\004\010\002\020\001\n\t\n\001b\022\004\010\002\020\001\032\010\n\001a\032\003980\032\t\n\001b\032\0042020\032\003\010\310\001" endorsement:<endorser:"\n\007Org0MSP\022\210\004-----BEGIN -----\nMIIBYzCCAQmgAwIBAwICA+gwCgYIKoZIzj0EAwIwEzERMA8GA1UEAwwIcGVlck9y\nZzAwHhcNMTcwMjIwMTkwNjExWhcNMTgwMjIwMTkwNjExWjAQMQ4wDAYDVQQDDAVw\nZWVyMTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABI9/7z3nMORUeS3rZ+F93ymD\nR2jiB6Wm+QSoSz/uQuRavnoksgU6peF5rBMfebk/PfNoVjdR4egCqAHBHIpp7Iuj\nUDBOMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFJpxVAXpMAEOHtbNCwvL1m/ku9gt\nMB8GA1UdIwQYMBaAFFQzuQR1RZP/Qn/BNDtGSa8n4eN/MAoGCCqGSM49BAMCA0gA\nMEUCIQDsQ6lmuLdKmMgnN5+9YjlpCRQEJCoaG3uxRHhrAecZngIgQZlwnvwka+TM\ngF/yC3r2MeELK9ocw8c22DAe6x71RT4=\n-----END -----\n" signature:"0E\002!\000\241\316\276\025\227\334\347\021y\211\365?\273\320#Qlcy\202\220#\353w\303\000\035\306\363q\3516\002 \024\346\254dGF\203V\204\261/x\211k\341u\025\202\351\314\216\322/rT\322\365\"\363x\233M" > 
+2017-04-12 15:18:58.387 UTC [main] main -> INFO 008[0m Exiting.....
+===================== Invoke transaction on PEER1 on myc0/mycc0 is successful ===================== 
+
+===================== Querying on PEER1 on myc0/mycc0... ===================== 
+Attempting to Query PEER1 ...3 secs
+Attempting to Query PEER1 ...6 secs
+Attempting to Query PEER1 ...9 secs
+Attempting to Query PEER1 ...12 secs
+
+[36m2017-04-12 15:19:10.727 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2017-04-12 15:19:10.727 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+[36m2017-04-12 15:19:10.727 UTC [msp] Sign -> DEBU 003[0m Sign: plaintext: 0A99050A6308031A0C08EE8AB9C70510...796363301A0A0A0571756572790A0161 
+[36m2017-04-12 15:19:10.727 UTC [msp] Sign -> DEBU 004[0m Sign: digest: 7F587E6CCDA05608603E518329C623042C9BDD355D5EEFB2C373CCBE05759733 
+Query Result: 980
+2017-04-12 15:19:10.733 UTC [main] main -> INFO 005[0m Exiting.....
+===================== Query on PEER1 on myc0/mycc0 is successful ===================== 
+
+===================== Querying on PEER2 on myc0/mycc0... ===================== 
+Attempting to Query PEER2 ...3 secs
+
+[36m2017-04-12 15:19:13.779 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2017-04-12 15:19:13.779 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+[36m2017-04-12 15:19:13.780 UTC [msp] Sign -> DEBU 003[0m Sign: plaintext: 0A99050A6308031A0C08F18AB9C70510...796363301A0A0A0571756572790A0161 
+[36m2017-04-12 15:19:13.780 UTC [msp] Sign -> DEBU 004[0m Sign: digest: 251F0221257839839ABB119B23C6D4D9E62FC655708CD0597595E86D88361D7F 
+Query Result: 980
+2017-04-12 15:19:28.114 UTC [main] main -> INFO 005[0m Exiting.....
+===================== Query on PEER2 on myc0/mycc0 is successful ===================== 
+
+[36m2017-04-12 15:19:28.152 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2017-04-12 15:19:28.152 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+[36m2017-04-12 15:19:28.153 UTC [msp] Sign -> DEBU 003[0m Sign: plaintext: 0A98050A6208031A0B08808BB9C70510...696E766F6B650A01610A01620A023130 
+[36m2017-04-12 15:19:28.153 UTC [msp] Sign -> DEBU 004[0m Sign: digest: C590D0E93F7D036027A16746DCC1C167C542059EF881D7F6C822CB5D92A5FC06 
+[36m2017-04-12 15:19:28.159 UTC [msp] Sign -> DEBU 005[0m Sign: plaintext: 0A98050A6208031A0B08808BB9C70510...F87DC2579E6B3D35EF36B38551F5585E 
+[36m2017-04-12 15:19:28.159 UTC [msp] Sign -> DEBU 006[0m Sign: digest: 8F1723742FBE43BE8B873D8E0C1780DCAB981F7BDCEACF05B13B276D1F61E5C8 
+2017-04-12 15:19:28.161 UTC [chaincodeCmd] chaincodeInvokeOrQuery -> INFO 007[0m Invoke result: version:1 response:<status:200 message:"OK" > payload:"\n \001ijU\243\222\026\311\342\001\200\234\034\232\246\235\247\373z\303\365\376\203\332\347H\325_\346\036\036\346\022V\nO\022\027\n\004lccc\022\017\n\r\n\005mycc0\022\004\010\001\020\001\0224\n\005mycc0\022+\n\t\n\001a\022\004\010\003\020\001\n\t\n\001b\022\004\010\003\020\001\032\010\n\001a\032\003970\032\t\n\001b\032\0042030\032\003\010\310\001" endorsement:<endorser:"\n\007Org1MSP\022\210\004-----BEGIN -----\nMIIBYzCCAQmgAwIBAwICA+gwCgYIKoZIzj0EAwIwEzERMA8GA1UEAwwIcGVlck9y\nZzEwHhcNMTcwMjIwMTkwNjExWhcNMTgwMjIwMTkwNjExWjAQMQ4wDAYDVQQDDAVw\nZWVyMjBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABLZyoiEc/0aTctk8THKHtQ8W\nF2BAG1vgB6kxT+cUaLnEH2El9NTvRYjHmjq8ozM9+/R2JVucEGZelAIQxKD5pXuj\nUDBOMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFDdoFJ6jiClMPOVsNx5akist91so\nMB8GA1UdIwQYMBaAFAQlMVsXlKGMEWPfKMMM6QVASnlPMAoGCCqGSM49BAMCA0gA\nMEUCIQC7wATZy+O/7UIPzSiMSXNgBKCaT2U55+Y/e0FcHQFSoQIgCyKExrm3gtW0\nSAN1VofiAZkr3gYndu9goHZe4wVh9eQ=\n-----END -----\n" signature:"0D\002 :\274%6\256{\277E\245/\277\331x6\t\233L\211@/\334X\320\233\300*\177]\346{\251,\002 \010;Y\352\332S\350\022\277\346W\243\0058j\211\370}\302W\236k=5\3576\263\205Q\365X^" > 
+2017-04-12 15:19:28.161 UTC [main] main -> INFO 008[0m Exiting.....
+===================== Invoke transaction on PEER2 on myc0/mycc0 is successful ===================== 
+
+===================== Querying on PEER2 on myc0/mycc0... ===================== 
+Attempting to Query PEER2 ...3 secs
+Attempting to Query PEER2 ...6 secs
+Attempting to Query PEER2 ...9 secs
+Attempting to Query PEER2 ...12 secs
+
+[36m2017-04-12 15:19:40.507 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2017-04-12 15:19:40.507 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+[36m2017-04-12 15:19:40.507 UTC [msp] Sign -> DEBU 003[0m Sign: plaintext: 0A99050A6308031A0C088C8BB9C70510...796363301A0A0A0571756572790A0161 
+[36m2017-04-12 15:19:40.507 UTC [msp] Sign -> DEBU 004[0m Sign: digest: 4FA0680589E5B00A925B83C51FA71143D85F0615F5AF382F72E2A668405A4401 
+Query Result: 970
+2017-04-12 15:19:40.514 UTC [main] main -> INFO 005[0m Exiting.....
+===================== Query on PEER2 on myc0/mycc0 is successful ===================== 
+
+===================== Querying on PEER3 on myc0/mycc0... ===================== 
+Attempting to Query PEER3 ...3 secs
+
+[36m2017-04-12 15:19:43.566 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2017-04-12 15:19:43.566 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+[36m2017-04-12 15:19:43.566 UTC [msp] Sign -> DEBU 003[0m Sign: plaintext: 0A99050A6308031A0C088F8BB9C70510...796363301A0A0A0571756572790A0161 
+[36m2017-04-12 15:19:43.566 UTC [msp] Sign -> DEBU 004[0m Sign: digest: 2B46A28F8F6E8EB9881AFF4024572E6FF3089647332990E4348A702E6F5CDE87 
+Query Result: 970
+2017-04-12 15:19:58.225 UTC [main] main -> INFO 005[0m Exiting.....
+===================== Query on PEER3 on myc0/mycc0 is successful ===================== 
+
+[36m2017-04-12 15:19:58.301 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2017-04-12 15:19:58.301 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+[36m2017-04-12 15:19:58.302 UTC [msp] Sign -> DEBU 003[0m Sign: plaintext: 0A99050A6308031A0C089E8BB9C70510...696E766F6B650A01610A01620A023130 
+[36m2017-04-12 15:19:58.302 UTC [msp] Sign -> DEBU 004[0m Sign: digest: EB55E7F219FA8DD40B2FF8BD9277ABC9E531B83141DEFA63A2F534C718DF11AE 
+[36m2017-04-12 15:19:58.308 UTC [msp] Sign -> DEBU 005[0m Sign: plaintext: 0A99050A6308031A0C089E8BB9C70510...B4B92F27A91AE310B80A80DECE9630E5 
+[36m2017-04-12 15:19:58.308 UTC [msp] Sign -> DEBU 006[0m Sign: digest: 311FD2C3C54975CCDF0A93D8FD9B150C8B881C720B9A99E71BF3B3A3841A2B9E 
+2017-04-12 15:19:58.311 UTC [chaincodeCmd] chaincodeInvokeOrQuery -> INFO 007[0m Invoke result: version:1 response:<status:200 message:"OK" > payload:"\n \246g\217\370\320\025b#7\204Gh\017u\337\375e\311\037\271\244\342(\313\037\345\320\3379`\014M\022V\nO\022\027\n\004lccc\022\017\n\r\n\005mycc0\022\004\010\001\020\001\0224\n\005mycc0\022+\n\t\n\001a\022\004\010\004\020\001\n\t\n\001b\022\004\010\004\020\001\032\010\n\001a\032\003960\032\t\n\001b\032\0042040\032\003\010\310\001" endorsement:<endorser:"\n\007Org1MSP\022\210\004-----BEGIN -----\nMIIBYzCCAQmgAwIBAwICA+gwCgYIKoZIzj0EAwIwEzERMA8GA1UEAwwIcGVlck9y\nZzEwHhcNMTcwMjIwMTkwNjExWhcNMTgwMjIwMTkwNjExWjAQMQ4wDAYDVQQDDAVw\nZWVyMzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABMvgApKCXYIEY4YgPTgQKrLM\nGMdK/1j8WEl2hijED+onVUF/w/oleiSljNOCxdda3u3X0yXqXz/ozQPJL/d4YL+j\nUDBOMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFOzMeVZK5xYzjaeO2uGvz8B7CQS7\nMB8GA1UdIwQYMBaAFAQlMVsXlKGMEWPfKMMM6QVASnlPMAoGCCqGSM49BAMCA0gA\nMEUCIQCgKtFodSdXcz2yf9MZB90t1nXYytpGUPMAl0/Gy2/yfQIgAcC1KRtaiclr\n9C9tshhXdYdbpvDruVZrwqjJ4drPHik=\n-----END -----\n" signature:"0E\002!\000\365|\263\242\337z>Z\217\310i\211\242\347j\303\024J\3318\351m!-g\006\310\251?\252-\300\002 $\332\221y\376\031\304\266\t\314o\214\001\000P=\264\271/'\251\032\343\020\270\n\200\336\316\2260\345" > 
+2017-04-12 15:19:58.312 UTC [main] main -> INFO 008[0m Exiting.....
+===================== Invoke transaction on PEER3 on myc0/mycc0 is successful ===================== 
+
+===================== Querying on PEER3 on myc0/mycc0... ===================== 
+Attempting to Query PEER3 ...3 secs
+Attempting to Query PEER3 ...6 secs
+Attempting to Query PEER3 ...9 secs
+Attempting to Query PEER3 ...12 secs
+
+[36m2017-04-12 15:20:10.571 UTC [msp] GetLocalMSP -> DEBU 001[0m Returning existing local MSP
+[36m2017-04-12 15:20:10.571 UTC [msp] GetDefaultSigningIdentity -> DEBU 002[0m Obtaining default signing identity
+[36m2017-04-12 15:20:10.571 UTC [msp] Sign -> DEBU 003[0m Sign: plaintext: 0A99050A6308031A0C08AA8BB9C70510...796363301A0A0A0571756572790A0161 
+[36m2017-04-12 15:20:10.571 UTC [msp] Sign -> DEBU 004[0m Sign: digest: A644EAE4FE35C1F7F62F2A422F16A4F911C6101D8982EC4D5EFE0C5315E24C47 
+Query Result: 960
+2017-04-12 15:20:10.581 UTC [main] main -> INFO 005[0m Exiting.....
+===================== Query on PEER3 on myc0/mycc0 is successful ===================== 
+
+
+Total execution time 117 secs
+
+]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
